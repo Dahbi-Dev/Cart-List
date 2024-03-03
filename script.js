@@ -15,11 +15,15 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
+    if (inputValue === "") {
+        alert("Please enter a cart title.");
+    } else {
+        push(shoppingListInDB, inputValue)
+        clearInputFieldEl();
+    }
+});
     
-    push(shoppingListInDB, inputValue)
-    
-    clearInputFieldEl()
-})
+
 
 onValue(shoppingListInDB, function(snapshot) {
     if (snapshot.exists() ) {

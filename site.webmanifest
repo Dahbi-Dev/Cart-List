@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Cart List",
+  "short_name": "Cart-List",
   "icons": [
     {
       "src": "assets/android-chrome-192x192.png",
@@ -13,7 +13,24 @@
       "type": "image/png"
     }
   ],
-  "theme_color": " #992600",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "theme_color": "#00a2ff",
+  "background_color": "#00a2ff57",
+  "display": "standalone",
+  "start_url": "./index.html",
+
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots": [],
+  "shortcuts": [],
+  "description": "Your Movie List App",
+  "categories": ["entertainment"],
+  "dir": "ltr",
+  "lang": "en",
+  "orientation": "portrait",
+  "scope": "/",
+  "serviceworker": {
+    "src": "./serviceWorker.js"
+  },
+  "splash_pages": null,
+  "status_bar": null
 }
